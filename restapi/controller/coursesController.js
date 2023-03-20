@@ -153,7 +153,7 @@ async function deleteCourse(req, res, id) {
 
         response.message = courses;
 
-        res.writeHead(400, {'Content-Type': 'application/json'});
+        res.writeHead(200, {'Content-Type': 'application/json'});
         res.write(JSON.stringify(response));
         res.end();            
     }

@@ -1,0 +1,17 @@
+<div>
+    <div>
+        <input type="text" id="name" [(ngModel)]="searchParam" placeholder="Search">
+        <input type="button" (click) = "getUniversities()" value="Search">
+    </div>
+    
+    <div class="parentContainer">
+        <div *ngFor="let university of universities" class="container">
+            <p>{{ university.name }}</p>
+            <div class="inner">
+                <a *ngFor="let link of university.links" class="link" href='{{link}}'>
+                    {{ link }}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

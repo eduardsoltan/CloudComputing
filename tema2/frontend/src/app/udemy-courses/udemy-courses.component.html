@@ -1,0 +1,14 @@
+<div>
+    <div>
+        <input type="text" id="name" [(ngModel)]="searchParam" placeholder="Search">
+        <input type="button" (click) = "search()" value="Search">
+    </div>
+    
+    <div class="parent">
+        <div *ngFor="let course of courses" class="container">
+            <img src="{{course.image}}" alt="">
+            <p>{{ course.title }}</p>
+            <a href="{{ url + course.url }}" class="button">Link</a>
+        </div>
+    </div>
+</div>

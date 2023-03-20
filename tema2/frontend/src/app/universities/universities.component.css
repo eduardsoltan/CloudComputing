@@ -1,0 +1,22 @@
+.parentContainer {
+    margin: 30px;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+
+    border: 1px solid blue;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.inner {
+    display: flex;
+}
+
+.link {
+    margin: 0 5px;
+}

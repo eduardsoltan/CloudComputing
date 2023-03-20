@@ -1,0 +1,29 @@
+<div>    
+    <div *ngFor="let course of courses">
+        <div class="row">
+            <p class="widthClass">{{ course.name }}</p>
+            <p class="widthClass">Credits: {{ course.credits }}</p>
+            <i class="fa-solid fa-trash" (click) = deleteCourse(course)></i>
+        </div>
+    </div>
+
+    <div class="form">
+        <h3>Add new course</h3>
+
+        <div class="formControl">
+            <label for="name">Name:</label>
+            <input type="text" name="name" [(ngModel)]="newCourse.name">
+        </div>
+        <div class="formControl">
+            <label for="credits">Credits:</label>
+            <input type="number" name="credits" id="" min = "4" max = "6" [(ngModel)]="newCourse.credits">
+        </div>
+        <div class="formControl">
+            <label for="description">Description:</label>
+            <textarea name="description" id="" cols="30" rows="5" [(ngModel)]="newCourse.description"></textarea>
+        </div>
+        <div class="buttonDiv">
+            <button class="submit" (click)="addNewCourse()">Save</button>
+        </div>
+    </div>
+</div>

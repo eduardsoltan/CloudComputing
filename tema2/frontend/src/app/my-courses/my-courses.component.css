@@ -1,0 +1,33 @@
+.row {
+    display: flex;
+    border: 1px solid blue;
+
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.widthClass {
+    width: 40%;
+}
+
+.row p {
+    margin: 0;
+}
+
+.form {
+    width: 50%;
+    margin: 40px auto;
+}
+
+.formControl {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonDiv {
+    width: 100%;
+}
+
+.submit {
+    margin: 10px auto;
+}
